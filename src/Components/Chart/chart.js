@@ -2,7 +2,7 @@ import React from "react";
 import {Bar} from "react-chartjs-2";
 import './chart.css';
 
-const Chart = ({usersFacebook, usersGitHub, usersGoogle}) => {
+const Chart = ({numberOfGoogle, numberOfFacebook, numberOfGitHub}) => {
     return (
         <div>
             <Bar
@@ -12,7 +12,7 @@ const Chart = ({usersFacebook, usersGitHub, usersGoogle}) => {
                     datasets: [
                         {
                             label: 'Number of users',
-                            data: [usersFacebook.length || 0, usersGoogle.length || 0, usersGitHub.length || 0],
+                            data: [numberOfFacebook, numberOfGoogle, numberOfGitHub],
                             backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)'],
                         }
                     ],
