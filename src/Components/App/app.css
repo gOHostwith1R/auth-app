@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 24px;
+    background: rgb(223,222,235);
+    background: linear-gradient(90deg, rgba(223,222,235,1) 0%, rgba(208,231,236,1) 50%, rgba(211,210,223,1) 100%);
+}
+
+.header a {
+    text-decoration: none;
+    padding: 0 50px;
+}
+
+.header a:hover {
+    color: lightslategray;
+}
